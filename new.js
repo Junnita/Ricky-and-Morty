@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     getCharacters()
   });
    function getCharacters(){
-      fetch("https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7")
+      fetch('https://backend-project-ten.vercel.app/results')
       .then(res => res.json())
       .then(data => {
         console.log(data)
